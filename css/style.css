@@ -1,0 +1,30 @@
+
+body {
+    font-family: "Gilroy","Roboto","Arial", sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+                    /*HEADER*/
+header {
+    width: 100%;
+    height: 963px;
+    background-color: #505050;
+    background: url(../img/img-header.jpg) no-repeat center;
+    filter: brightness(57%);
+    display: flex;
+    justify-content: space-between;
+}
+.header-wrap {
+    margin: 10px 150px 150px 150px;
+}
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
