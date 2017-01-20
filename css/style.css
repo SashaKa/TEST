@@ -106,3 +106,93 @@ header {
     left: 50%;
     bottom: 0;
 }
+
+/*MAIN*/
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+.produce-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 31.5789474%;
+
+}
+.about-title {
+    font-size: 48px;
+    line-height: 5.5rem;
+    margin-left: 40%;
+}
+.produce-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.title-produce {
+    font-size: 19px;
+    line-height: 3.2rem;
+    display: block;
+    position: relative;
+}
+
+.title-produce::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    bottom: 67px;
+    left: 0;
+}
+.analytics::before {
+    width: 65px;
+    height: 65px;
+    background-position: -86px 0px ;
+}
+.strategy::before {
+    width: 65px;
+    height: 65px;
+    background-position: -151px -3px;
+}
+.smm::before {
+    width: 65px;
+    height: 65px;
+    background-position: -197px -97px;
+}
+.technology::before {
+    width: 65px;
+    height: 65px;
+    background-position: -6px -0px;
+}
+.design::before {
+    width: 65px;
+    height: 65px;
+    background-position: -264px -97px;
+}
+.about-produce {
+    font-size: 14px;
+    line-height: 2.8rem;
+    padding-right: 100px;
+}
+
+.production,.design {
+    margin-top: 4rem;
+
+}
+.project {
+    position: relative;
+}
+.project::after {
+    content: "";
+    position: absolute;
+    background-color: #817c7b;
+    width: 2px;
+    height: 67px;
+    left: 50%;
+    bottom: 0;
+}
+/*REVIEWS*/
+video {
+    width: 51.578947%;
+}
