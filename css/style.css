@@ -1,10 +1,15 @@
 
 body {
-    font-family: "Gilroy","Roboto","Arial", sans-serif;
+    font-family:"Roboto","Gilroy","Arial", sans-serif;
     font-size: 10px;
     margin: 0;
     padding: 0;
 }
+@font-face {
+  font-family:"Roboto","Gilroy","Arial", sans-serif;
+   src: url(../fonts/Roboto-Light.ttf);
+   src: url(../fonts/Gilroylight.ttf);
+ }
 .container {
     max-width: 1900px;
     margin: 0 auto;
@@ -14,17 +19,90 @@ header {
     width: 100%;
     height: 963px;
     background-color: #505050;
-    background: url(../img/img-header.jpg) no-repeat center;
-    filter: brightness(57%);
-    display: flex;
-    justify-content: space-between;
+    background: url(../img/header.jpg) no-repeat center;
+    color: #ffffff;
+    position: relative;
 }
 .header-wrap {
-    margin: 10px 150px 150px 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+.logo {
+    font-size: 4.8rem;
+    color: #ffffff;
+    font-weight: 800;
+    margin-top: 7rem;
+    margin-left: 4rem;
 }
 .main-menu {
     display: flex;
     flex-direction: row;
-    list-style: none;
 
+}
+.menu-items {
+    list-style: none;
+    padding: 1rem 1rem 1rem 3rem;
+}
+.menu-items:hover {
+    outline: 2px solid #ffffff;
+    cursor: pointer;
+}
+.menu-link {
+    color: #ffffff;
+    font-size: 2.2rem;
+
+}
+.phone-number {
+    color: #ffffff;
+    font-size: 2.2rem;
+    text-decoration: none;
+}
+ .lang-choice {
+     color: #ffffff;
+     font-size: 2.2rem;
+     margin-right: 4.3rem;
+     padding: 1.5rem;
+ }
+ .lang {
+     padding: 1rem;
+     color: #777777;
+ }
+ .lang:hover {
+     outline: 2px solid #ffffff;
+     cursor: pointer;
+     color: #ffffff;
+ }
+ .promo {
+     margin-left: 5rem;
+     font-family: "Roboto";
+     font-weight: 100;
+ }
+.promo-header {
+    font-size: 9rem;
+    line-height: 11rem;
+    margin: 0;
+}
+.promo-scroll {
+    font-size: 3.4rem;
+    line-height: 5.5rem;
+    margin: 0;
+}
+.scroll-name {
+    font-size: 2.2rem;
+    font-weight: 2rem;
+    color: #8d8c8c;
+    display:block;
+    margin-left: 45%;
+    margin-top: 6rem;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    background-color: #817c7b;
+    width: 2px;
+    height: 67px;
+    left: 50%;
+    bottom: 0;
 }
