@@ -185,6 +185,7 @@ header {
 }
 .pro {
     position: relative;
+    padding-bottom: 60px;
 }
 .pro::after {
     content: "";
@@ -192,11 +193,32 @@ header {
     background-color: #817c7b;
     width: 2px;
     height: 42px;
-    left: 50%;
+    left: 7%;
     bottom: 0;
 }
 
 /*PROJECTS*/
+.name-company {
+    font-size: 48px;
+    font-weight: 110px;
+    color: #000000;
+}
+.content-project {
+    font-size: 24px;
+    font-weight: 34px;
+    color: #000000;
+    list-style: none;
+}
+.project-review {
+    color: #000000;
+    font-size: 22px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    outline: 2px solid #ffffff;
+    padding: 20px 55px 25px 25px;
+}
+}
 .project{
     height: 860px;
     display: flex;
@@ -238,8 +260,64 @@ header {
 .projects-link:hover {
     background-color: #000000;
     outline: 2px solid #ffffff;
-    
 
+
+}
+/*WORTH*/
+.worth-wrap {
+    background-color: #f1f2f2;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.worth {
+    width: 26.3157835%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    padding-left: 19px;
+
+}
+.title-worth {
+    font-size: 48px;
+    line-height: 55px;
+    margin-left: 40%;
+    margin-top: 8rem;
+    font-weight: bold;
+    z-index: 100;
+}
+.num-img {
+    background-image: url(../img/6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -57px;
+    left: 34%;
+    width: 253px;
+    height: 327px;
+
+}
+.name-worth {
+    font-size: 19px;
+    line-height: 32px;
+    padding-left: 65px;
+    position: relative;
+}
+.name-worth::before {
+    content: "";
+     width: 45px;
+     height: 4px;
+     background-color: #e74c3c;
+     position: absolute;
+     top: 14px;
+     left: 0;
+
+ }
+.text-worth {
+    font-size: 17px;
+    line-height: 32px;
 }
 /*REVIEWS*/
 video {
