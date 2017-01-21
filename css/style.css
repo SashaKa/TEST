@@ -26,7 +26,7 @@ header {
 .header-wrap {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: flex-end;
 
 }
 .logo {
@@ -53,6 +53,9 @@ header {
     color: #ffffff;
     font-size: 2.2rem;
 
+}
+.phone {
+    padding-bottom: 1.5rem;
 }
 .phone-number {
     color: #ffffff;
@@ -117,7 +120,7 @@ header {
     flex-direction: column;
     list-style: none;
     width: 31.5789474%;
-
+    margin-bottom: 80px;
 }
 .about-title {
     font-size: 48px;
@@ -177,20 +180,66 @@ header {
 }
 
 .production,.design {
-    margin-top: 4rem;
+    /*margin-top: 4rem;*/
 
 }
-.project {
+.pro {
     position: relative;
 }
-.project::after {
+.pro::after {
     content: "";
     position: absolute;
     background-color: #817c7b;
     width: 2px;
-    height: 67px;
+    height: 42px;
     left: 50%;
     bottom: 0;
+}
+
+/*PROJECTS*/
+.project{
+    height: 860px;
+    display: flex;
+}
+ .gazprom {
+
+    background-color: #bdcbd7;
+
+}
+.gazprom .about-project,
+.adidas .about-project {
+    margin-left: auto;
+}
+.tinkoff {
+    background-color: #f9d100;
+}
+.adidas {
+    background-color: #fcfcfc;
+
+}
+.adidas .about-project {
+
+}
+.project-link-wrap {
+    display: flex;
+    justify-content: center;
+    background-color: #303030;
+    height: 214px;
+}
+.projects-link {
+    align-self: center;
+    font-size: 22px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    outline: 2px solid #ffffff;
+    padding: 20px 55px 25px 25px;
+}
+.projects-link:hover {
+    background-color: #000000;
+    outline: 2px solid #ffffff;
+    
+
 }
 /*REVIEWS*/
 video {
