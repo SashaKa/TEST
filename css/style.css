@@ -198,6 +198,10 @@ header {
 }
 
 /*PROJECTS*/
+.about-project {
+    padding: 30px 10px 20px 10px;
+    margin-top: 200px;
+}
 .name-company {
     font-size: 48px;
     font-weight: 110px;
@@ -211,42 +215,86 @@ header {
 }
 .project-review {
     color: #000000;
+    background-color: inherit;
     font-size: 22px;
     line-height: 20px;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
-    outline: 2px solid #ffffff;
+    border: 2px solid #000000;
+    outline: none;
     padding: 20px 55px 25px 25px;
+    margin-top: 70px;
+    cursor: pointer;
 }
+.project-review:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 .project{
     height: 860px;
     display: flex;
+    position: relative;
+}
+.demo-img {
+
+    position: absolute;
 }
  .gazprom {
-
     background-color: #bdcbd7;
-
 }
-.gazprom .about-project,
-.adidas .about-project {
+.gazprom .about-project{
     margin-left: auto;
+    margin-right: 140px;
+}
+.gazprom .demo-img {
+    background-image: url(../img/site.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 66.2105263%;
+    height: 1000px;
+    top:100px;
+    z-index: 100;
 }
 .tinkoff {
     background-color: #f9d100;
 }
+.tinkoff .demo-img {
+    background-image: url(../img/phone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 900px;
+    left:528px;
+    z-index: 100;
+}
+.tinkoff .about-project {
+    margin-left: 250px;
+
+}
 .adidas {
-    background-color: #fcfcfc;
+    background-color: #fefefe;
+
+
+}
+.adidas .demo-img {
+    width: 100%;
+    height: 720px;
+    background: url(../img/monitor.jpg) no-repeat center;
 
 }
 .adidas .about-project {
-
+    margin-left: auto;
+    margin-right: 200px;
+    z-index: 100;
 }
+
 .project-link-wrap {
     display: flex;
     justify-content: center;
     background-color: #303030;
     height: 214px;
+    z-index: 100;
 }
 .projects-link {
     align-self: center;
@@ -256,6 +304,7 @@ header {
     text-decoration: none;
     outline: 2px solid #ffffff;
     padding: 20px 55px 25px 25px;
+
 }
 .projects-link:hover {
     background-color: #000000;
@@ -286,7 +335,7 @@ header {
     margin-left: 40%;
     margin-top: 8rem;
     font-weight: bold;
-    z-index: 100;
+    z-index: 50;
 }
 .num-img {
     background-image: url(../img/6.png);
@@ -297,7 +346,7 @@ header {
     left: 34%;
     width: 253px;
     height: 327px;
-
+    z-index: 30;
 }
 .name-worth {
     font-size: 19px;
@@ -307,19 +356,63 @@ header {
 }
 .name-worth::before {
     content: "";
-     width: 45px;
-     height: 4px;
-     background-color: #e74c3c;
-     position: absolute;
-     top: 14px;
-     left: 0;
+    width: 45px;
+    height: 4px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 14px;
+    left: 0;
 
  }
 .text-worth {
     font-size: 17px;
     line-height: 32px;
 }
+.clients {
+
+}
+.title-clients-block {
+    font-size: 48px;
+    line-height: 110px;
+    margin-left: 40%;
+}
+.clients-logo {
+    background: url(../img/clients-logo.jpg) no-repeat center;
+    width: 100%;
+    height: 920px;
+}
+.promo-text {
+    font-size: 34px;
+    line-height: 55px;
+    color: #000000;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    margin-left: 30%;
+    text-align: center;
+    width: 48.421052%;
+    position: relative;
+}
+.promo-text::before,
+.promo-text::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+    background-color: #e74c3c;
+    position: absolute;
+}
+.promo-text::before {
+    top: 201px;
+    left:410px;
+}
+.promo-text::after {
+    bottom: 201px;
+    left: 410px;
+}
 /*REVIEWS*/
+.reviews {
+    margin-top: 110px;
+}
+
 video {
     width: 51.578947%;
 }
