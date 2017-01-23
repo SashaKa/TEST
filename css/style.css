@@ -89,9 +89,7 @@ header {
      color: #ffffff;
  }
  .promo {
-     margin-left: 5rem;
-     font-family: "Roboto";
-     font-weight: 100;
+     margin-left: 140px;
  }
 .promo-header {
     font-size: 90px;
@@ -188,13 +186,8 @@ header {
 }
 .about-produce {
     font-size: 14px;
-    line-height: 2.8rem;
+    line-height: 28px;
     padding-right: 100px;
-}
-
-.production,.design {
-    /*margin-top: 4rem;*/
-
 }
 .pro {
     position: relative;
@@ -206,7 +199,7 @@ header {
     background-color: #817c7b;
     width: 2px;
     height: 42px;
-    left: 7%;
+    left: 5%;
     bottom: 0;
 }
 
@@ -273,8 +266,8 @@ header {
     background-color: #f9d100;
 }
 .tinkoff .demo-img {
-    background-image: url(../img/phone.png);
-    background-position: center;
+    background-image: url(../img/phone.png), url(../img/Shadow-phone.png);
+    background-position: center center;
     background-repeat: no-repeat;
     width: 70%;
     height: 900px;
@@ -429,6 +422,7 @@ header {
     margin-top: 110px;
 }
 .name-client {
+    font-family: "Roboto-Regular";
     position: relative;
     float: right;
     margin-top: 200px;
@@ -505,41 +499,42 @@ video {
     margin-top: -50px;
  }
 .social-btn {
-    display: inline-block;
-    width: 85px;
-    height: 75px;
-    font-size: 0;
-    vertical-align: top;
-    position: relative;
     cursor: pointer;
-    border: 2px solid red;
+    display: inline-block;
+    font-size: 0;
+    height: 75px;
+    position: relative;
+    vertical-align: top;
+    width: 80px;
+}
+.social-btn:hover {
+    background-image: -moz-linear-gradient(#29b0f6, #56d684);
+    background-image: -webkit-gradient(#29b0f6, #56d684);
+    background-image: -ms-linear-gradient(#29b0f6, #56d684);
+    background-image: -o-linear-gradient(#29b0f6, #56d684);
+    background-image: linear-gradient(#29b0f6, #56d684);
+      background-image: -webkit-linear-gradient(#29b0f6, #56d684);
     border-radius: 50%;
 }
-/*.social-btn:hover {
-    background-image: linear-gradient (#26aefc, #54d48a);
-
-}*/
 .social-btn::before {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
     content: "";
-    height: 75px;
-    width: 85px;
+    height: 85px;
+    right: 3px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    background-image: url(../img/sprite.png); background-repeat: no-repeat;
+    top: 0;
+    width: 75px;
 }
 .social-btn-be::before {
-    background-position: -9px 83px;
-    height: 75px;
-    width: 85px;
+    background-position: -9px -83px;
 }
 .social-btn-db::before {
-    background-position: -9px 83px;
-    height: 75px;
-    width: 85px;
+    background-position: -9px -83px;
 }
 .social-btn-vk::before {
-    background-position: -9px 160px;
-    height: 75px;
-    width: 85px;
+    background-position: -10px -183px;
+}
+.social-btn-fb::before {
+     background-position: -232px -10px;
 }
