@@ -1,15 +1,22 @@
-
+@font-face {
+  font-family:"Roboto-Light";
+   src: url(../fonts/Roboto-Light.ttf);
+   src: url(../fonts/Roboto-Bold.ttf);
+   src:url(../fonts/Roboto-Regular.ttf);
+ }
+ @font-face {
+     font-family: "Gilroy";
+     src: url(../fonts/Gilroyextrabold.ttf);
+ }
 body {
     font-family:"Roboto","Gilroy","Arial", sans-serif;
     font-size: 10px;
     margin: 0;
     padding: 0;
 }
-@font-face {
-  font-family:"Roboto","Gilroy","Arial", sans-serif;
-   src: url(../fonts/Roboto-Light.ttf);
-   src: url(../fonts/Gilroylight.ttf);
- }
+h1 {
+    font-family:
+}
 .container {
     max-width: 1900px;
     margin: 0 auto;
@@ -412,7 +419,76 @@ header {
 .reviews {
     margin-top: 110px;
 }
-
+.name-client {
+    position: relative;
+    float: right;
+    margin-top: 200px;
+    position: relative;
+}
+.name {
+    font-size: 19px;
+    line-height: 32px;
+}
+.position {
+    font-size: 17px;
+    line-height: 32px;
+}
 video {
     width: 51.578947%;
 }
+/*.forward {
+    display: inline-block;
+    width: 55px;
+    height: 120px;
+    cursor: pointer;
+    position: absolute;
+    top:40px;
+    right: -60px;
+}*/
+.forward::before {
+    content: "";
+    top:-10px;
+    right: -60px;
+    width: 3px;
+    height: 58px;
+    background-color: #e6e6e6;
+    border-radius: 6px;
+    cursor: pointer;
+    position: absolute;
+    transform: rotate(-25deg);
+}
+.forward::after {
+    content: "";
+    top: 40px;
+    right: -60px;
+    width: 3px;
+    height: 58px;
+    background-color: #e6e6e6;
+    border-radius: 6px;
+    transform: rotate(25deg);
+    position: absolute;
+    cursor: pointer;
+}
+/*FOOTER*/
+.wrap-contacts {
+    height: 583px;
+    margin-top: 50px;
+    padding-top: 100px;
+    background: url(../img/footer.jpg) no-repeat center;
+    font-size: 48px;
+    line-height: 110px;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+}
+
+.email {
+    font-size: 30px;
+}
+.footer-social {
+    display: inline-block;
+    text-align: center;
+    background-color: #222222;
+    padding-top: 73px;
+
+ }
