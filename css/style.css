@@ -517,7 +517,7 @@ video {
     border-radius: 50%;
 }
 .social-btn::before {
-    background-image: url("../img/sprite.png");
+    background-image: url("../img/sprite.png") ;
     background-repeat: no-repeat;
     content: "";
     height: 85px;
@@ -533,7 +533,7 @@ video {
     background-position: -9px -83px;
 }
 .social-btn-vk::before {
-    background-position: -10px -183px;
+    background-position: -10px -181px;
 }
 .social-btn-fb::before {
      background-position: -232px -10px;
