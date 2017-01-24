@@ -133,6 +133,12 @@ header {
     width: 31.5789474%;
     margin-bottom: 80px;
 }
+.produce-items:nth-child(4) {
+    margin-left: 260px;
+}
+.produce-items:last-child {
+    margin-right: 260px;
+}
 .about-title {
     font-size: 48px;
     line-height: 5.5rem;
@@ -263,17 +269,13 @@ header {
     z-index: 100;
 }
 .tinkoff {
-    background-color: #f9d100;
-}
-.tinkoff .demo-img {
-    background-image: url(../img/phone.png), url(../img/Shadow-phone.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 70%;
+    background:
+    url(../img/phone.png) no-repeat 700px -40px #fad200;
+    background-size: 51%;
     height: 900px;
-    left:528px;
     z-index: 100;
 }
+/*, url(../img/Shadow-phone.png) no-repeat -30px 900px*/
 .tinkoff .about-project {
     margin-left: 250px;
 
