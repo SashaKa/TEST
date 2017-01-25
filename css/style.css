@@ -33,9 +33,14 @@ header {
     position: relative;
 }
 .header-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 
 }
 .logo {
@@ -46,8 +51,13 @@ header {
     margin-left: 4rem;
 }
 .main-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     font-family: "Roboto-Light";
 }
 .menu-items {
@@ -123,13 +133,21 @@ header {
 
 /*MAIN*/
 .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background: url(../img/back_wrap.png) no-repeat top;
 }
 .produce-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     list-style: none;
     width: 31.5789474%;
     margin-bottom: 80px;
@@ -146,9 +164,13 @@ header {
     margin-left: 40%;
 }
 .produce-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-top: 4rem;
 }
 .title-produce {
@@ -247,6 +269,8 @@ header {
 }
 .project{
     height: 860px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
 }
@@ -306,13 +330,19 @@ header {
 }
 
 .project-link-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: url(../img/view_project.jpg) no-repeat, #303030;
     height: 214px;
 }
 .projects-link {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-size: 22px;
     line-height: 20px;
     color: #ffffff;
@@ -331,15 +361,24 @@ header {
 .worth-wrap {
     background-color: #f1f2f2;
     height: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     position: relative;
 }
 .worth {
     width: 26.3157835%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: 100px;
     padding-left: 19px;
     padding-bottom: 50px;
@@ -459,7 +498,8 @@ video {
     border-radius: 6px;
     cursor: pointer;
     position: absolute;
-    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
 }
 .forward::after {
     content: "";
@@ -469,7 +509,8 @@ video {
     height: 58px;
     background-color: #e6e6e6;
     border-radius: 6px;
-    transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
     position: absolute;
     cursor: pointer;
 }
@@ -509,10 +550,7 @@ video {
     width: 80px;
 }
 .social-btn:hover {
-    background-image: -moz-linear-gradient(#29b0f6, #56d684);
     background-image: -webkit-gradient(#29b0f6, #56d684);
-    background-image: -ms-linear-gradient(#29b0f6, #56d684);
-    background-image: -o-linear-gradient(#29b0f6, #56d684);
     background-image: linear-gradient(#29b0f6, #56d684);
       background-image: -webkit-linear-gradient(#29b0f6, #56d684);
     border-radius: 50%;
