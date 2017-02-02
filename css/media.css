@@ -13,7 +13,8 @@ h1 {
 h2, p {
     font-family: "Roboto-Light";
 }
-h5 {
+
+h5, h4 {
     font-family: "Roboto-Regular";
 }
 header {
@@ -25,16 +26,16 @@ header {
 }
 .header-wrap {
     display: flex;
+    align-items: center;
    justify-content: space-between;
 
 }
 @media screen and (max-width:865px) {
-    .header {
-        padding: 0;
-    }
     .header-wrap {
         display:flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
 .main-menu {
@@ -43,17 +44,16 @@ header {
 
 }
 .menu-items {
-    padding-right: 3.75rem;
-    padding-top: 0;
+    padding: 0.625rem 0.625rem 0.625rem 1.875rem;
+}
+.menu-items:hover {
+    outline: 2px solid #ffffff;
+    cursor: pointer;
 }
 .main-menu, .lang-choice {
     color: #ffffff;
     font-size: 1.27rem;
     line-height: 1.25rem;
-}
-
-.phone, .lang-choice {
-    padding-top: 1.3rem;
 }
 .phone-number {
     text-decoration: none;
@@ -62,17 +62,140 @@ header {
     line-height: 1.25rem;
     font-weight: bold;
 }
+.lang-choice {
+    color: #ffffff;
+    font-family: "Roboto-Light";
+    font-size: 1.375rem;
+    margin-right: 2.6875rem;
+    padding: 1rem;
+}
+@media screen and (max-width:865px) {
+    .lang-choice {
+        padding-left: 4rem;
+    }
+}
+.lang {
+    padding: 1rem;
+    color: #777777;
+}
+.lang:hover {
+    outline: 2px solid #ffffff;
+    cursor: pointer;
+    color: #ffffff;
+}
+@media screen and (max-width:865px) {
+    .promo {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
 .promo-header {
     font-size: 5.62rem;
     line-height: 6.87rem;
     text-transform: uppercase;
     color: #ffffff;
 }
+@media screen and (max-width:865px) {
+    .promo-header {
+        font-size: 2.5rem;
+        line-height: 5rem;
+        width: 100%;
+    }
+}
 .promo-scroll {
     font-size: 2.125rem;
     line-height: 3.43rem;
     color: #ffffff;
 }
+@media screen and (max-width:865px) {
+    .promo-scroll {
+        font-size: 1.25rem;
+    }
+}
+header .scroll-name {
+    color: #ffffff;
+    margin-left: 46%;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+.produce-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media screen and (max-width: 700px){
+    .produce-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.about-title {
+    margin-left: 45%;
+}
+.produce-items {
+    list-style: none;
+    width: 31.5789474%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: baseline;
+}
+@media screen and (max-width: 700px) {
+    .produce-items {
+        width: 95%;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+}
+.title-produce {
+    font-size: 1.187rem;
+    line-height: 3.2rem;
+    position: relative;
+}
+.about-produce {
+    font-family: "Roboto-Light";
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+
+}
+.title-produce::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    bottom: 67px;
+    left: 0;
+}
+.analytics::before {
+    width: 65px;
+    height: 65px;
+    background-position: -86px 0px ;
+}
+.strategy::before {
+    width: 65px;
+    height: 65px;
+    background-position: -151px -3px;
+}
+.smm::before {
+    width: 65px;
+    height: 65px;
+    background-position: -197px -97px;
+}
+.technology::before {
+    width: 65px;
+    height: 65px;
+    background-position: -6px -0px;
+}
+.design::before {
+    width: 65px;
+    height: 65px;
+    background-position: -264px -97px;
+}
+
 /*.container {
     max-width: 118.75rem;
     margin: 0 auto;

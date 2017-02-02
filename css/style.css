@@ -61,8 +61,7 @@ header {
     font-family: "Roboto-Light";
 }
 .menu-items {
-    list-style: none;
-    padding: 10px 10px 10px 30px;
+    padding: 0.625rem 0.625rem 0.625rem 1.875rem;
 }
 .menu-items:hover {
     outline: 2px solid #ffffff;
